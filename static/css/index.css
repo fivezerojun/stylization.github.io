@@ -1,0 +1,227 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+
+.publication-title {
+}
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 0;
+}
+
+.results-carousel video {
+  margin: 0;
+}
+
+
+.interpolation-panel {
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.interpolation-panel .interpolation-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.interpolation-video-column {
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+.interpolation-panel .slider {
+  margin: 0 !important;
+}
+
+#interpolation-image-wrapper {
+  width: 100%;
+}
+#interpolation-image-wrapper img {
+  border-radius: 5px;
+}
+
+.video-section {
+  text-align: center;        /* 确保总标题居中 */
+  margin-bottom: 20px;       /* 给标题和视频之间添加间距 */
+}
+
+.video-title {
+  font-size: 1.5vw;           /* 设置标题字体大小 */
+  font-weight: bold;         /* 加粗标题 */
+  margin-bottom: 10px;       /* 标题和视频之间的间距 */
+}
+
+.video-container {
+  display: flex;               /* 使用 Flexbox 水平排列视频 */
+  justify-content: flex-start; /* 视频从左到右排列 */
+  gap: 15px;                   /* 视频之间的间距 */
+  overflow-x: auto;            /* 如果视频太多，允许横向滚动 */
+}
+
+.video-column {
+  text-align: center;          /* 视频和名称居中 */
+  flex-shrink: 0;              /* 防止视频列缩小 */
+  width: 15vw;                 /* 容器宽度为视口宽度的 15% */
+}
+.video-column2 {
+  text-align: center;          /* 视频和名称居中 */
+  flex-shrink: 0;              /* 防止视频列缩小 */
+  width: 12.3vw;                 /* 容器宽度为视口宽度的 25% */
+}
+
+.video-column3 {
+  text-align: center;          /* 视频和名称居中 */
+  flex-shrink: 0;              /* 防止视频列缩小 */
+  width: 25vw;                 /* 容器宽度为视口宽度的 25% */
+}
+
+video {
+  width: 100%;                 /* 视频宽度适应容器宽度 */
+  height: auto;                /* 高度自动调整，保持比例 */
+  border-radius: 5px;          /* 可选，添加圆角 */
+}
+
+.video-name {
+  margin-top: 10px;            /* 给视频和名称之间添加间距 */
+  font-size: 0.8vw;             /* 设置名称字体大小 */
+  color: #333;                 /* 设置名称的颜色 */
+  font-weight: bold;
+}
+
+.image-section {
+  text-align: center;          /* 标题和图片居中 */
+  margin: 40px 0;              /* 上下间距 */
+}
+
+
+.main-image {
+  max-width: 60%;              /* 宽度最多为屏幕宽度的 90% */
+  height: auto;                /* 保持图片原始比例 */
+  border-radius: 10px;         /* 可选：添加圆角 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 可选：图片阴影 */
+}
+ 
+.image-caption {
+  width: 65%;
+  margin: 15px auto 0 auto; /* 上15px间距，其余居中 */
+  font-size: 1.0vw;
+  font-weight: bold;
+  color: #555;
+  line-height: 1.6;
+}
