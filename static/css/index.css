@@ -211,12 +211,18 @@ video {
 
 
 .main-image {
-  max-width: 60%;              /* 宽度最多为屏幕宽度的 90% */
+  max-width: 60%;              /* 宽度最多为屏幕宽度的 60% */
   height: auto;                /* 保持图片原始比例 */
   border-radius: 10px;         /* 可选：添加圆角 */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 可选：图片阴影 */
 }
- 
+
+.pipeline-image {
+  height: auto;                /* 保持图片原始比例 */
+  border-radius: 10px;         /* 可选：添加圆角 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 可选：图片阴影 */
+}
+
 .image-caption {
   width: 65%;
   margin: 15px auto 0 auto; /* 上15px间距，其余居中 */

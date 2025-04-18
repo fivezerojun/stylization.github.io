@@ -153,12 +153,12 @@
               </span> -->
               <!-- Video Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="https://www.youtube.com/watch?v=ZYCjhcN-T5s"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
-                  <span>Video (Coming soon)</span>
+                  <span>Video</span>
                 </a>
               </span>
               <!-- Code Link. -->
@@ -257,7 +257,7 @@
 
 <div class="image-section">
   <img src="./static/images/teaser.jpeg" alt="Teaser Image" class="main-image">
-  <p class="image-caption">A showcase of generated motions driven by the unsupervised style of bird gliding. Our method synthesizes motions by combining textual descriptions of desired content with style references characterized by the distinctive body postures and fluid dynamics of bird gliding.</p>
+  <p class="image-caption">A showcase of generated motions driven by the unsupervised style of bird gliding. Our method synthesizes motions by combining textual descriptions of desired motion content with unsupervised style reference motions.</p>
 </div>
 
 <section class="section">
@@ -275,16 +275,34 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+          <iframe src="https://www.youtube.com/embed/ZYCjhcN-T5s?rel=0&amp;showinfo=0"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div> -->
+    </div>
     <!--/ Paper video. -->
+
+    <!-- Pipeline. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Pipeline</h2>
+        <div class="content has-text-justified">
+          Our method takes text descriptions of motion content and unlabeled style reference motions as input, 
+          generating stylized motions that preserve semantic consistency with the content texts while aligning with the reference style. 
+          To achieve this, we first train a text-conditioned diffusion model, which combines a text encoder and a denoising U-Net model to enable motion generation from text prompts. 
+          Next, we train a style adapter, which utilizes a CNN style encoder to extract temporally dynamic style features from reference motions and injects these features into the U-Net layers through the Semantics-Aware Style Inject (SASI) module.
+          The SASI module leverages text as a mediator to capture the temporal correspondences between motion latent and style features, injecting style features into the layers of the denoising U-Net.
+        </div>
+        <div class="image-section">
+          <img src="./static/images/pipeline.jpg" alt="Teaser Image" class="pipeline-image">
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
   </div>
 </section>
 
@@ -332,7 +350,7 @@
     <!--/ Matting. -->
 
     <!-- Animation. -->
-    <div class="columns is-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Comparison on unsupervised styles</h2>
 
@@ -340,7 +358,7 @@
         <!-- <h3 class="title is-4">Interpolating states</h3> -->
         <div class="content has-text-justified">
           <p>
-            We compare our model to three baseline methods. When the motion involves multiple actions, our method seamlessly integrates distinct styles into corresponding actions.
+            We compare our model to three baseline methods: <a href=https://h-y1heng.github.io/StableMoFusion-page/>StableMoFusion</a>+<a href=https://xingliangjin.github.io/MCM-LDM-Web/>MCM_LDM</a>, <a href=https://h-y1heng.github.io/StableMoFusion-page/>StableMoFusion</a>+<a href=http://www.cad.zju.edu.cn/home/jin/SigA20241/Decoupling_Contact.htm>DecouplingContact</a>, and <a href=https://neu-vi.github.io/SMooDi/?ref=aiartweekly>SMooDi</a>. When the motion involves multiple actions, our method seamlessly integrates distinct styles into corresponding actions.
           </p>
         </div>
         <div class="video-section">
