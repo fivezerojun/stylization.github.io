@@ -162,7 +162,7 @@ body {
 }
 
 .video-title {
-  font-size: 1.5vw;           /* 设置标题字体大小 */
+  font-size: clamp(16px, 1.5vw, 24px);           /* 设置标题字体大小 */
   font-weight: bold;         /* 加粗标题 */
   margin-bottom: 10px;       /* 标题和视频之间的间距 */
 }

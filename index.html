@@ -626,6 +626,63 @@
           </div>
         </div>
         
+        <h2 class="title is-3">Additional Application: Stylized Motion In-Between</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our approach also allows for stylized motion in-between. <span style="color:orange;">Orange</span> frames represent keyframes, and <span style="color:purple;">purple</span> frames represent generated results.
+          </p>
+        </div>
+        
+        <div class="video-section">
+          <h2 class="video-title">An old man walks forward while raising both hands.</h2>
+          <div class="video-container">
+            <div class="video-column3">
+              <video controls>
+                <source src="./static/videos/inbetween/MDM.mp4" type="video/mp4">
+              </video>
+              <p class="video-name">MDM</p>
+            </div>
+            <div class="video-column3">
+              <video controls>
+                <source src="./static/videos/inbetween/ours.mp4" type="video/mp4">
+              </video>
+              <p class="video-name">Ours (+ style from keyframes)</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="content has-text-justified">
+          <p>
+            Without explicit style control, previous diffusion methods use the statistically probable motions to reach target keyframes,
+            disrupting the “old man” style.
+            Our method, on the other hand, can use the style from keyframe sequences to create motion that retains the “old man” style.
+          </p>
+        </div>
+
+        <div class="video-section">
+          <h2 class="video-title">A man walks forward while raising both hands.</h2>
+          <div class="video-container">
+            <div class="video-column3">
+              <video controls>
+                <source src="./static/videos/inbetween/target_mesh.mp4" type="video/mp4">
+              </video>
+              <p class="video-name">Style Reference</p>
+            </div>
+            <div class="video-column3">
+              <video controls>
+                <source src="./static/videos/inbetween/ours_relax.mp4" type="video/mp4">
+              </video>
+              <p class="video-name">Ours (+ style from reference)</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="content has-text-justified">
+          <p>
+            Given a reference motion with a relaxed style, our approach enables a style transition from an “old man” pace to a relaxed pace.
+          </p>
+        </div>
+
         <h2 class="title is-3">Limitations</h2>
         <div class="content has-text-justified">
           <p>
