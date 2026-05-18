@@ -1,4 +1,7 @@
+.DS_Store
 .DS_store
 .idea
-/static/images/
-/static/videos/*
+node_modules
+dist
+dist-ssr
+*.local
